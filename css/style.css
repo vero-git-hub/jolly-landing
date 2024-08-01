@@ -5,6 +5,19 @@ body, html {
     font-family: 'Arial', sans-serif;
     background-color: #0D1B2A;
     color: #FFFFFF;
+    height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
 }
 
 header {
@@ -70,8 +83,8 @@ header {
     }
 }
 
+/* Home section */
 .home-section {
-    margin-top: 15%;
     padding-left: 10%;
 }
 

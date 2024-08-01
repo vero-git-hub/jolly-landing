@@ -60,3 +60,4 @@ build/
 
 # Logs
 *.log
+/content.json
