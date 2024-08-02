@@ -22,5 +22,7 @@ document.getElementById('productsTitle').innerText = data.productsTitle;
 document.getElementById('productsDescription').innerText = data.productsDescription;
 document.getElementById('productTitle').innerText = data.productTitle;
 document.getElementById('productDescription').innerText = data.productDescription;
+document.getElementById('contactsTitle').innerText = data.contactsTitle;
+document.getElementById('contactsCheckbox').innerText = data.contactsCheckbox;
 })
 .catch(error => console.error('Error loading content:', error));

@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #0D1B2A;
     color: #FFFFFF;
     height: 100%;
@@ -15,9 +15,9 @@ body, html {
 
 .swiper-slide {
     display: flex;
-    /*align-items: center;*/
     justify-content: center;
     flex-direction: column;
+    height: 100%;
 }
 
 header {

@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0D1B2A;
+    color: #FFFFFF;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 5%;
+    background: url('img/background_3.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: left;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-left {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-left h2 {
+    font-family: 'Risque', cursive;
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: calc(50% - 10px);
+    padding: 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #FFFFFF;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-row input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-row label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px 30px;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+    background-color: #FFFFFF;
+    color: #0D1B2A;
+}
