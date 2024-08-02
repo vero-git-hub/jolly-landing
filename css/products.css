@@ -1,3 +1,8 @@
+#swiper-slide-products {
+    background: url('../img/background_products.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 .products-section {
     display: flex;
     align-items: flex-start;
@@ -67,16 +72,16 @@
     font-size: 28px;
     font-weight: lighter;
     line-height: 1.5;
-    margin: 0 0 0 35px;
+    margin: 0 0 0 0;
     color: #FFFFFF;
 }
 
 .product-image {
     position: absolute;
     top: 81px;
-    right: 100px;
+    right: 50px;
     bottom: 67px;
-    width: auto;
+    width: 250px;
     max-height: calc(100% - 148px);
     display: flex;
     justify-content: flex-end;
@@ -106,10 +111,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .product-item img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+}
+
+.product-item.selected {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+}
+
+.product-item.selected img {
+    opacity: 0.7;
 }
