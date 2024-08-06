@@ -68,3 +68,11 @@ fetch('content.json')
         document.getElementById('contactsCheckbox').innerText = data.contactsCheckbox;
     })
     .catch(error => console.error('Error loading content:', error));
+
+document.addEventListener('DOMContentLoaded', function() {
+    var burgerMenu = document.querySelector('.burger-menu');
+
+    burgerMenu.addEventListener('click', function() {
+        burgerMenu.classList.toggle('active');
+    });
+});
