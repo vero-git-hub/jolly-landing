@@ -27,60 +27,6 @@ body, html {
     height: 100%;
 }
 
-header {
-    position: fixed;
-    top: 3%;
-    left: 5%;
-    right: 3%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    background-color: transparent;
-    z-index: 1000;
-}
-
-.logo img {
-    max-height: 65px;
-}
-
-.main-nav {
-    display: flex;
-    align-items: center;
-}
-
-.main-nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.main-nav ul li {
-    margin: 0 20px;
-}
-
-.main-nav ul li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: normal;
-}
-
-.burger-menu {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: 140px;
-}
-
-.burger-menu .line {
-    width: 25px;
-    height: 3px;
-    background-color: #FFFFFF;
-    margin: 4px 0;
-}
-
 @media (max-width: 768px) {
     .main-nav ul {
         display: none;

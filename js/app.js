@@ -71,8 +71,12 @@ fetch('content.json')
 
 document.addEventListener('DOMContentLoaded', function() {
     var burgerMenu = document.querySelector('.burger-menu');
+    var sideMenu = document.querySelector('.side-menu');
+    var mainNav = document.querySelector('.main-nav ul');
 
     burgerMenu.addEventListener('click', function() {
         burgerMenu.classList.toggle('active');
+        sideMenu.classList.toggle('active');
+        mainNav.classList.toggle('hidden');
     });
 });
