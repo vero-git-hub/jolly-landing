@@ -36,8 +36,15 @@ document.addEventListener('DOMContentLoaded', function() {
         selectedDiv.addEventListener('click', function(e) {
             e.stopPropagation();
             closeAllSelect(this);
-            this.nextSibling.classList.toggle('select-hide');
-            this.classList.toggle('select-arrow-active');
+            if (!this.classList.contains('select-open')) {
+                this.nextSibling.classList.toggle('select-hide');
+                this.classList.toggle('select-arrow-active');
+                this.classList.toggle('select-open');
+            } else {
+                this.nextSibling.classList.add('select-hide');
+                this.classList.remove('select-arrow-active');
+                this.classList.remove('select-open');
+            }
         });
     }
 
@@ -49,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 continue;
             }
             selected[i].classList.remove('select-arrow-active');
+            selected[i].classList.remove('select-open');
         }
         for (var i = 0; i < items.length; i++) {
             items[i].classList.add('select-hide');
