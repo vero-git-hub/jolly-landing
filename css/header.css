@@ -37,12 +37,35 @@ header {
 
 .main-nav ul li {
     margin: 0 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .main-nav ul li a {
     text-decoration: none;
     color: #FFFFFF;
     font-weight: normal;
+    display: block;
+    position: relative;
+    transition: color 0.4s ease;
+}
+
+.main-nav ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    color: #D02B2B;
+    transition: top 0.4s ease;
+}
+
+.main-nav ul li a:hover::before {
+    top: 0;
+}
+
+.main-nav ul li a:hover {
+    color: transparent;
 }
 
 .burger-menu {
