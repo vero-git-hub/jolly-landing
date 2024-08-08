@@ -83,28 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
             speechBubble.classList.add('show');
         }
     }, 3000);
-
-    var starContainer = document.createElement('div');
-    starContainer.classList.add('stars');
-    document.querySelector('.home-section').appendChild(starContainer);
-
-    for (var i = 0; i < 100; i++) {
-        var star = document.createElement('div');
-        star.classList.add('star');
-        star.style.top = Math.random() * 100 + '%';
-        star.style.left = Math.random() * 100 + '%';
-        star.style.animationDelay = Math.random() * 1.5 + 's';
-        starContainer.appendChild(star);
-    }
-
-    const snowContainer = document.querySelector('.snow');
-    for (let i = 0; i < 50; i++) {
-        const snowflake = document.createElement('div');
-        snowflake.classList.add('snowflake');
-        snowflake.style.top = `${Math.random() * -50}%`;
-        snowflake.style.left = `${Math.random() * 100}%`;
-        snowContainer.appendChild(snowflake);
-    }
 });
 
 fetch('content.json')
