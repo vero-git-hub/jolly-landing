@@ -76,6 +76,13 @@ document.addEventListener('DOMContentLoaded', function () {
         sideMenu.classList.toggle('active');
         mainNav.classList.toggle('hidden');
     });
+
+    setTimeout(function() {
+        var speechBubble = document.querySelector('.speech-bubble');
+        if (speechBubble) {
+            speechBubble.classList.add('show');
+        }
+    }, 3000);
 });
 
 fetch('content.json')
