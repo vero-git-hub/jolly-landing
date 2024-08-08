@@ -7,7 +7,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    background-size: cover;
     text-align: left;
     padding-left: 7%;
 }
@@ -77,12 +76,7 @@
 }
 
 .product-image {
-    position: absolute;
-    top: 81px;
-    right: 50px;
-    bottom: 67px;
     width: 250px;
-    max-height: calc(100% - 148px);
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -142,4 +136,11 @@
 .specific-image-3 {
     width: 70% !important;
     margin-left:20px;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
 }
