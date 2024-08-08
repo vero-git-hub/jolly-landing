@@ -1,7 +1,8 @@
 .custom-select {
     position: relative;
     display: inline-block;
-    width: 200px;
+    width: calc(50% - 10px);
+    margin-right: 10px;
 }
 
 .custom-select select {
@@ -30,7 +31,8 @@
     border: 2px solid #FFFFFF;
     border-radius: 0 0 15px 15px;
     top: 100%;
-    width: 100%;
+    left: 0;
+    right: 0;
     z-index: 99;
 }
 
