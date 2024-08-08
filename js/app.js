@@ -96,6 +96,15 @@ document.addEventListener('DOMContentLoaded', function () {
         star.style.animationDelay = Math.random() * 1.5 + 's';
         starContainer.appendChild(star);
     }
+
+    const snowContainer = document.querySelector('.snow');
+    for (let i = 0; i < 50; i++) {
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflake.style.top = `${Math.random() * -50}%`;
+        snowflake.style.left = `${Math.random() * 100}%`;
+        snowContainer.appendChild(snowflake);
+    }
 });
 
 fetch('content.json')

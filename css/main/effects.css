@@ -81,3 +81,48 @@
     0%, 100% { opacity: 0.8; }
     50% { opacity: 0.2; }
 }
+
+/* Snow */
+.snow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.snowflake {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100px); opacity: 0; }
+    10% { opacity: 0.8; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+
+/* Adjust the number and positions of stars and snowflakes */
+.snowflake:nth-child(2n) {
+    animation-duration: 6s;
+}
+.snowflake:nth-child(3n) {
+    animation-duration: 7s;
+}
+.snowflake:nth-child(4n) {
+    animation-duration: 8s;
+}
+.snowflake:nth-child(5n) {
+    animation-duration: 9s;
+}
+.snowflake:nth-child(6n) {
+    animation-duration: 10s;
+}
