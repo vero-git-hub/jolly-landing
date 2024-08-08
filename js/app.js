@@ -83,6 +83,19 @@ document.addEventListener('DOMContentLoaded', function () {
             speechBubble.classList.add('show');
         }
     }, 3000);
+
+    var starContainer = document.createElement('div');
+    starContainer.classList.add('stars');
+    document.querySelector('.home-section').appendChild(starContainer);
+
+    for (var i = 0; i < 100; i++) {
+        var star = document.createElement('div');
+        star.classList.add('star');
+        star.style.top = Math.random() * 100 + '%';
+        star.style.left = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 1.5 + 's';
+        starContainer.appendChild(star);
+    }
 });
 
 fetch('content.json')
