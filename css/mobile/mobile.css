@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+    .main-nav ul, .speech-bubble, .arrow-down, .dynamic-image {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .home-section h1 {
+        font-size: 52px;
+        line-height: 1.2;
+        margin: 0;
+        text-align: left;
+    }
+
+    .home-section p {
+        font-size: 28px;
+        line-height: 1.4;
+        margin: 10px 0 20px;
+        text-align: left;
+    }
+
+    .cta-button {
+        display: block;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    .human {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        height: auto;
+        width: 100%;
+        overflow: visible;
+    }
+
+    .human img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .star::before, .star::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+    }
+}
